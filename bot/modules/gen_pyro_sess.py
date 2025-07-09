@@ -173,8 +173,8 @@ async def invoke(client, message, key):
     client.remove_handler(*handler)
 
 
-@new_thread
-async def get_decrypt_key(client, message):
+#@new_thread
+#async def get_decrypt_key(client, message):
     user_id = message.from_user.id
     msg_id = message.id
     grp_prompt = None
@@ -200,7 +200,6 @@ async def get_decrypt_key(client, message):
     client.remove_handler(*handler)
     
     _, key, is_cancelled = bot_cache[msg_id]
-    key = wLxxEsycYFcpwaD6v4CVoUjaM6DMwrgR6p3OIunArIA=
     if is_cancelled:
         await editMessage(prompt, "<b>Decrypt Key Invoke Cancelled</b>")
         if grp_prompt:
