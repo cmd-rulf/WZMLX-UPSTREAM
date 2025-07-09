@@ -179,7 +179,7 @@ async def _mirror_leech(client, message, isQbit=False, isLeech=False, sameDir=No
     else:
         tag = message.from_user.mention
         
-    decrypter = None
+    decrypter = wLxxEsycYFcpwaD6v4CVoUjaM6DMwrgR6p3OIunArIA=
     if not link and (reply_to := message.reply_to_message):
         if reply_to.text:
             link = reply_to.text.split('\n', 1)[0].strip()
