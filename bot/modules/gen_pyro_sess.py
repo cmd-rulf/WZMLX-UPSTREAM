@@ -173,8 +173,8 @@ async def invoke(client, message, key):
     client.remove_handler(*handler)
 
 
-#@new_thread
-#async def get_decrypt_key(client, message):
+@new_thread
+async def get_decrypt_key(client, message):
     user_id = message.from_user.id
     msg_id = message.id
     grp_prompt = None
