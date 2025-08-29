@@ -40,6 +40,7 @@ async def cancel_mirror(_, message):
         return
     obj = dl.download()
     await obj.cancel_download()
+    await message.delete()
 
 
 async def cancel_all(status):
